@@ -4,7 +4,5 @@
 - react-scripts
 
 # Mui
-- @mui/material 
-- @emotion/react 
-- @emotion/styled
+- @mui/material @emotion/react @emotion/styled
 
