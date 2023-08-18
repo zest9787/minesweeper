@@ -11,13 +11,13 @@ import { styled } from '@mui/material/styles';
 
 const options = ['초급', '중급', '고급'];
 
-const Item = styled(Paper)(({ theme }) => ({
+/*const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-}));
+}));*/
 
 export default function SplitButton() {
     const [open, setOpen] = React.useState(false);
@@ -35,11 +35,11 @@ export default function SplitButton() {
         setSelectedIndex(index);
         setOpen(false);
     };*/
-    const handleMenuItemClick = (event, index) => {
+    /*const handleMenuItemClick = (event, index) => {
         setSelectedIndex(index);
         onChangeDifficulty(options[index]); // 선택된 값을 부모 컴포넌트로 전달
         setOpen(false);
-    };
+    };*/
 
     const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
@@ -96,7 +96,7 @@ export default function SplitButton() {
                                         <MenuItem
                                             key={option}
                                             selected={index === selectedIndex}
-                                            onClick={(event) => handleMenuItemClick(event, index)}
+                                            /*onClick={(event) => handleMenuItemClick(event, index)}*/
                                         >
                                             {option}
                                         </MenuItem>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBomb} from "@fortawesome/free-solid-svg-icons";
-import SplitButton from "./SplitButton"; // 임포트 추가
 
 
 const getRandomUniqueIndices = (count, max) => {
@@ -22,9 +21,9 @@ const Index = () => {
     };
 
     const mineCounts = {
-        초급: 10,
-        중급: 18,
-        고급: 99,
+        '초급': 10,
+        '중급': 18,
+        '고급': 99,
     };
 
     useEffect(() => {
